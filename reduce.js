@@ -11,7 +11,7 @@ export const getSneaks = (brands) => {
 // OUTPUT: the average age of the dogs
 // REQS: use .reduce
 export const getAverageAge = (dogs) => {
-  function avg({ age }) {
-    
-  }
+  const dogAge = dogs.map((dog) => dog.age);
+  const avgAge = dogAge.reduce((a, b) => a + b, 0) / dogs.length;
+  return avgAge;
 };
