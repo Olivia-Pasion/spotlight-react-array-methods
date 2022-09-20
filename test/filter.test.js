@@ -1,7 +1,7 @@
 import { filterAu, filterOceania, filterYoungDogs, getYoungDogNames } from '../filter';
 import { brands, countries, dogs } from '../data';
 
-test('filterOceania returns countries in Oceania', () => {
+test.skip('filterOceania returns countries in Oceania', () => {
   expect(filterOceania(countries).map((elem) => elem.iso2)).toStrictEqual(['KI', 'MH', 'PF', 'MH']);
 });
 
