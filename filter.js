@@ -3,7 +3,8 @@
 // REQS: use .filter
 
 export const filterOceania = (countries) => {
-  
+  const oceania = countries.filter((country) => country.continent === 'Oceania');
+  return oceania;
 };
 
 // INPUT: the array of countries from data.js
