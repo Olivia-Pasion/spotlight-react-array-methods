@@ -22,5 +22,5 @@ export const getCountryCodes = (countries) => {
 
 export const getBrands = (brands) => {
   const brandNames = brands.map((brand) => brand.brand);
-  return [brandNames];
+  return brandNames;
 };
