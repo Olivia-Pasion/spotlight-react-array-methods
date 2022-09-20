@@ -2,7 +2,11 @@
 // OUTPUT: an array of the names
 // REQS: use .map
 
-export const getCountryNames = (countries) => {};
+export const getCountryNames = (countries) => {
+  const countryNames = countries.map((country) => country.name);
+  console.log(countryNames);
+  return countryNames;
+};
 
 // INPUT: the array of countries from data.js
 // OUTPUT: an array of the names and their iso2 country codes using .map
